@@ -1,0 +1,51 @@
+package com.work.model;
+/**
+ * <pre>
+ * 회원 도메인 클래스
+ * -- encapsulation 설계 반영
+ * ## 회원 검증조건
+ * 		1. 아이디 : 6~30자리
+ * 		2. 비밀번호 : 6~15자리
+ * 		-- 문자열 비교 메서드
+ * 		-- String
+ * 		-- equals(Object anObject) : boolean
+ * 
+ * 		1. 아이디
+ * 		2. 비밀번호
+ * 		3. 이름
+ * 		4. 휴대폰
+ * <pre>
+ * 
+ * @author 최낙원
+ * @version ver.1.0
+ * @since jdk1.8
+ *
+ */
+public class Member {
+	/** 아이디, 로그인 및 회원가입시 필요 */
+	private String memberId;
+	
+	/** 비밀번호, 로그인 및 회원가입시 필요 */
+	private String memberPw;
+	
+	/** 이름, 회원가입시 필요 */
+	private String name;
+	
+	/** 휴대폰, 회원가입, 예약, 취소시 필요 */
+	private String mobile;
+	
+	/**
+	 * 기본 생성자
+	 */
+	public Member() {
+		
+	}
+	
+	public Member(String memberId, String memberPw, String mobile, String mobile) {
+		this.memberId = memberId;
+		this.memberPw = memberPw;
+		this.name = name;
+		this.mobile = mobile;
+		
+	}
+}

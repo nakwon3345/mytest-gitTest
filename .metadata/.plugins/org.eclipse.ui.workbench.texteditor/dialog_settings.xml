@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="play"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="play"/>
+			<item value="MemberService"/>
+			<item value="R&gt;&gt;"/>
+			<item value="S&gt;&gt;"/>
+			<item value="VIP&gt;&gt;"/>
+			<item value="옥탑방 고양이 VIP&gt;&gt;"/>
+			<item value="break;"/>
+			<item value="return"/>
+			<item value="showone"/>
+			<item value="delReseve"/>
+			<item value="옥탑방 고양이 공연 정보"/>
+			<item value="del"/>
+			<item value="delReserve"/>
+			<item value="delreser"/>
+			<item value="memberjoin"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Test2"/>
+			<item value="뮤지컬 더 리퍼 R&gt;&gt;"/>
+			<item value="뮤지컬 더 리퍼 S&gt;&gt;"/>
+			<item value="뮤지컬 더 리퍼 VIP&gt;&gt;"/>
+			<item value="피카츄의 대모험 VIP&gt;&gt;"/>
+			<item value="피카츄의 대모험 S&gt;&gt;"/>
+			<item value="피카츄의 대모험 R&gt;&gt;"/>
+			<item value="낫아웃 R&gt;&gt;"/>
+			<item value="낫아웃 S&gt;&gt;"/>
+			<item value="낫아웃 VIP&gt;&gt;"/>
+			<item value="행복 VIP&gt;&gt;"/>
+			<item value="행복 S&gt;&gt;"/>
+			<item value="행복 R&gt;&gt;"/>
+			<item value="옥탑방 고양이 R&gt;&gt;"/>
+			<item value="옥탑방 고양이 S&gt;&gt;"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1263"/>
+		<item key="DIALOG_Y_ORIGIN" value="445"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

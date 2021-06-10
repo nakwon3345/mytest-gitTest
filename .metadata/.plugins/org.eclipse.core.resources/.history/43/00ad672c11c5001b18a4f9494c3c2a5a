@@ -1,0 +1,51 @@
+package com.work.service;
+
+import java.util.ArrayList;
+
+import com.work.model.InfoData;
+
+public class PlayService extends MemberService{
+	
+	private ArrayList<InfoData> play = new ArrayList<InfoData>();
+	
+	/**
+	 * 공연 추가
+	 * @param infoCode 공연코드
+	 * @param infoName 공연이름
+	 * @param infoDate 공연날짜
+	 * @param infoTime 공연시간
+	 * @param infoFemalActor 주연여배우
+	 * @param infoMaleActor 주연남배우
+	 */
+	public void addInfo(String infoCode, String infoName, String infoDate, String infoTime, String infoFemaleActor, String infoMaleActor) {
+		InfoData dto = new InfoData(infoCode, infoName, infoDate, infoTime, infoFemaleActor, infoMaleActor);
+		
+		addInfo(dto);
+	}
+	
+private void addInfo(InfoData dto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+//	public void addInfo(InfoData dto) {
+//		if(exist(dto.getInfoCode() == -1) {
+//			play.add(dto);
+//		}else {
+//			System.out.println("[오류] 동일 아이디 존재");
+//		}
+//	}
+	
+	public int getPlayCount(){
+		return play.size();
+	}
+	
+	public InfoData getConcert(String infoCode) {
+		int index = exist(infoCode);
+		if (index >= 0) {
+			return (InfoData)play.get(index);
+		}
+		return null;
+	}
+
+}

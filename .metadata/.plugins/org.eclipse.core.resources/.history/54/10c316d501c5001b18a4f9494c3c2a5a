@@ -1,0 +1,17 @@
+package com.work.model;
+
+public class InfoData {
+	
+	private String infoCode;
+	private String infoName;
+	private String infoDate;
+	private String infoTime;
+	private String infoFemaleActor;
+	private String infoMaleActor;
+	
+	public InfoData(String infoCode2, String infoName2, String infoDate2, String infoTime2, String infoFemalActor,
+			String infoMaleActor2) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

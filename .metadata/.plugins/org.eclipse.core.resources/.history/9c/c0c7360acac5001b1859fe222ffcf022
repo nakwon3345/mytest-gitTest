@@ -1,0 +1,9 @@
+package com.work.service;
+
+public class DuplicateException extends Exception {
+
+	public DuplicateException(String memberId) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

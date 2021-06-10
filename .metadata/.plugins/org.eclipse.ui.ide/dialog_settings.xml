@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="659"/>
+		<item key="DIALOG_Y_ORIGIN" value="341"/>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\pc11\Downloads\20.mms_cui_LECTURE.zip"/>
+			<item value="C:\Users\pc11\Downloads\12-2.io_LECTURE.zip"/>
+			<item value="C:\Users\pc11\Downloads\12.mms_exception_LECTURE.zip"/>
+			<item value="C:\Users\pc11\Downloads\06-2.mms_oop_inheritance_LECTURE.zip"/>
+			<item value="C:\Users\pc11\Downloads\05.constructor_this_LECTURE.zip"/>
+			<item value="C:\Users\pc11\Downloads\04.class_LECTURE.zip"/>
+			<item value="C:\Users\pc11\Downloads\mission3.zip"/>
+			<item value="C:\Users\pc11\Downloads\mission2.zip"/>
+			<item value="C:\Users\pc11\Downloads\03.array_LECTURE.zip"/>
+		</list>
+	</section>
+</section>

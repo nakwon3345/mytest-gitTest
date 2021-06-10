@@ -1,0 +1,45 @@
+package com.work.view;
+
+import java.util.Scanner;
+
+import com.work.service.MemberService;
+
+public class MemberManage {
+	public static void main(String[] args) {
+		int menu = 0;
+		Scanner scanner = new Scanner(System.in);
+		MemberService memberService = new MemberService();
+		
+		while(true) {
+			System.out.println("----회원 관리 시스템----");
+			System.out.println();
+			System.out.println("로그인<1>, 회원가입<2>, 전체 회원 보기<3>, 종료<4>");
+			System.out.println("--------");
+			System.out.print("어떤 메뉴를 이용하시겠습니까? ");
+			
+			menu = Integer.parseInt(scanner.nextLine());
+			
+			switch(menu) {
+			case 1:
+				memberService.Login();
+				break;
+			case 2:
+				memberService.MemberJoin();
+				break;
+			case 3:
+				memberService.SelectMember();
+				break;
+			case 4:
+				System.out.println("시스템을 종료합니다.");
+				return;
+				
+				default:
+					System.out.println("없는 메뉴입니다. 다시 입력해주세요.");
+			}
+		}
+		
+		
+		
+	}//
+
+}//

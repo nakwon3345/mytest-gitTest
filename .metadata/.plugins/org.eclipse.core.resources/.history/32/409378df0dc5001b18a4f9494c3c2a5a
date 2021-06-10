@@ -1,0 +1,180 @@
+package com.work.model;
+
+public class InfoData {
+	
+	private String infoCode;
+	private String infoName;
+	private String infoDate;
+	private String infoTime;
+	private String infoFemaleActor;
+	private String infoMaleActor;
+	
+	/**
+	 * 기본 생성자
+	 */
+	public InfoData() {
+
+	}
+	
+	/**
+	 * 공연 정보 필수 초기화 데이터 생성자
+	 * @param infoCode 공연코드
+	 * @param infoName 공연이름
+	 * @param infoDate 공연날짜
+	 * @param infoTime 공연시간
+	 * @param infoFemalActor 주연여배우
+	 * @param infoMaleActor 주연남배우
+	 */
+	public InfoData(String infoCode, String infoName, String infoDate, String infoTime, String infoFemalActor,
+			String infoMaleActor) {
+		this.infoCode = infoCode;
+		this.infoName = infoName;
+		this.infoDate = infoDate;
+		this.infoTime = infoTime;
+		this.infoFemaleActor = infoFemaleActor;
+		this.infoMaleActor = infoMaleActor;		
+	}
+
+	/**
+	 * @return the infoCode
+	 */
+	public String getInfoCode() {
+		return infoCode;
+	}
+
+	/**
+	 * @param infoCode the infoCode to set
+	 */
+	public void setInfoCode(String infoCode) {
+		this.infoCode = infoCode;
+	}
+
+	/**
+	 * @return the infoName
+	 */
+	public String getInfoName() {
+		return infoName;
+	}
+
+	/**
+	 * @param infoName the infoName to set
+	 */
+	public void setInfoName(String infoName) {
+		this.infoName = infoName;
+	}
+
+	/**
+	 * @return the infoDate
+	 */
+	public String getInfoDate() {
+		return infoDate;
+	}
+
+	/**
+	 * @param infoDate the infoDate to set
+	 */
+	public void setInfoDate(String infoDate) {
+		this.infoDate = infoDate;
+	}
+
+	/**
+	 * @return the infoTime
+	 */
+	public String getInfoTime() {
+		return infoTime;
+	}
+
+	/**
+	 * @param infoTime the infoTime to set
+	 */
+	public void setInfoTime(String infoTime) {
+		this.infoTime = infoTime;
+	}
+
+	/**
+	 * @return the infoFemaleActor
+	 */
+	public String getInfoFemaleActor() {
+		return infoFemaleActor;
+	}
+
+	/**
+	 * @param infoFemaleActor the infoFemaleActor to set
+	 */
+	public void setInfoFemaleActor(String infoFemaleActor) {
+		this.infoFemaleActor = infoFemaleActor;
+	}
+
+	/**
+	 * @return the infoMaleActor
+	 */
+	public String getInfoMaleActor() {
+		return infoMaleActor;
+	}
+
+	/**
+	 * @param infoMaleActor the infoMaleActor to set
+	 */
+	public void setInfoMaleActor(String infoMaleActor) {
+		this.infoMaleActor = infoMaleActor;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((infoCode == null) ? 0 : infoCode.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!(obj instanceof InfoData))
+			return false;
+		InfoData other = (InfoData) obj;
+		if (infoCode == null) {
+			if (other.infoCode != null)
+				return false;
+		} else if (!infoCode.equals(other.infoCode))
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append(infoCode);
+		builder.append(", ");
+		builder.append(infoName);
+		builder.append(", ");
+		builder.append(infoDate);
+		builder.append(", ");
+		builder.append(infoTime);
+		builder.append(", ");
+		builder.append(infoFemaleActor);
+		builder.append(", ");
+		builder.append(infoMaleActor);
+		builder.append(", ");
+		builder.append(getInfoCode());
+		builder.append(", ");
+		builder.append(getInfoName());
+		builder.append(", ");
+		builder.append(getInfoDate());
+		builder.append(", ");
+		builder.append(getInfoTime());
+		builder.append(", ");
+		builder.append(getInfoFemaleActor());
+		builder.append(", ");
+		builder.append(getInfoMaleActor());
+		builder.append(", ");
+		builder.append(getClass());
+		builder.append(", ");
+		builder.append(hashCode());
+		builder.append(", ");
+		builder.append(super.toString());
+		return builder.toString();
+	}
+
+}

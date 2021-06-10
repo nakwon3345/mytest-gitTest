@@ -1,0 +1,53 @@
+package com.work.service;
+
+import java.util.ArrayList;
+
+import com.work.model.InfoData;
+
+public class PlayService extends MemberService{
+	
+	private ArrayList play = new ArrayList();
+	
+	InfoData dto1 = new InfoData("paly_001", "뮤지컬 더 리퍼", "6/12", "19:30~22:00", "문채원", "송중기");
+//	InfoData dto2 = new InfoData("play_002", "옥탑방 고양이", "6/19", "20:00~22:00", "남정은", "이경민");
+//	InfoData dto3 = new InfoData("play_003", "피카츄의 대모험", "6/26", "19:30~21:30", "소니아", "금랑");
+//	InfoData dto4 = new InfoData("play_004", "낫아웃", "7/3", "20:00~22:30", "송이재", "정재광");
+//	InfoData dto5 = new InfoData("play_005", "행복", "7/10", "19:30~21:30", "김단율", "정영성");
+	
+	public void getPlay1() {
+		System.out.println("공연 코드 : play_001");
+		System.out.println("공연 이름 : 뮤지컬 더 리퍼");
+		System.out.println("공연 일자 및 공연 시간 : 6/12, 19:30~22:00");
+		System.out.println("주연 배우 : 문채원, 송중기");
+	}
+	
+	public void getPlay2() {
+		System.out.println("공연 코드 : play_002");
+		System.out.println("공연 이름 : 옥탑방 고양이");
+		System.out.println("공연 일자 및 공연 시간 : 6/19, 20:00~22:00");
+		System.out.println("주연 배우 : 남정은, 이경민");
+	}
+	
+	public void getPlay3() {
+		System.out.println("공연 코드 : play_003");
+		System.out.println("공연 이름 : 피카츄의 대모험");
+		System.out.println("공연 일자 및 공연 시간 : 6/26, 19:30~21:30");
+		System.out.println("주연 배우 : 소니아, 금랑");
+	}
+	
+	public void getPlay4() {
+		System.out.println("공연 코드 : play_004");
+		System.out.println("공연 이름 : 낫아웃");
+		System.out.println("공연 일자 및 공연 시간 : 6/19, 20:00~22:30");
+		System.out.println("주연 배우 : 송이재, 정재광");
+	}
+	
+	public void getPlay5() {
+		System.out.println("공연 코드 : play_005");
+		System.out.println("공연 이름 : 행복");
+		System.out.println("공연 일자 및 공연 시간 : 7/10, 19:30~21:30");
+		System.out.println("주연 배우 : 김단율, 정영성");
+	}
+	
+	
+}

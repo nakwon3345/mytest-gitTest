@@ -1,0 +1,7 @@
+package com.work.view;
+
+import com.work.service.MemberService;
+
+public class Test1 extends MemberService {
+
+}

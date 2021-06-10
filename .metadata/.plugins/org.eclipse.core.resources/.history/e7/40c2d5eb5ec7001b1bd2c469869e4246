@@ -1,0 +1,137 @@
+package com.work.service;
+
+
+import java.util.ArrayList;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+import com.work.model.Member;
+public class MemberService {
+	
+	Scanner sc = new Scanner(System.in);
+	List<Member> members = new ArrayList<Member>();
+	String memberId, memberPw, name, mobile;
+	
+	public void getPlay1() {
+		System.out.println("공연 코드 : play_001");
+		System.out.println("공연 이름 : 뮤지컬 더 리퍼");
+		System.out.println("공연 일자 및 공연 시간 : 6/12, 19:30~22:00");
+		System.out.println("주연 배우 : 문채원, 송중기");
+	}
+	
+	public void getPlay2() {
+		System.out.println("공연 코드 : play_002");
+		System.out.println("공연 이름 : 옥탑방 고양이");
+		System.out.println("공연 일자 및 공연 시간 : 6/19, 20:00~22:00");
+		System.out.println("주연 배우 : 남정은, 이경민");
+	}
+	
+	public void getPlay3() {
+		System.out.println("공연 코드 : play_003");
+		System.out.println("공연 이름 : 피카츄의 대모험");
+		System.out.println("공연 일자 및 공연 시간 : 6/26, 19:30~21:30");
+		System.out.println("주연 배우 : 소니아, 금랑");
+	}
+	
+	public void getPlay4() {
+		System.out.println("공연 코드 : play_004");
+		System.out.println("공연 이름 : 낫아웃");
+		System.out.println("공연 일자 및 공연 시간 : 6/19, 20:00~22:30");
+		System.out.println("주연 배우 : 송이재, 정재광");
+	}
+	
+	public void getPlay5() {
+		System.out.println("공연 코드 : play_005");
+		System.out.println("공연 이름 : 행복");
+		System.out.println("공연 일자 및 공연 시간 : 7/10, 19:30~21:30");
+		System.out.println("주연 배우 : 김단율, 정영성");
+	}
+	
+	public MemberService() {
+		members.add(new Member("user01", "password01", "파이리", "01012345678"));
+		members.add(new Member("user02", "password02", "꼬부기", "01056851247"));
+		members.add(new Member("Administrator", "password03", "이상해씨", "01089562356"));
+					
+	}
+		
+		public void SelectMember() {
+			Iterator<Member> ite = members.iterator();
+			
+			 while(ite.hasNext()) {
+		            System.out.println(ite.next() + " ");
+		        }
+		        
+		    }
+			
+		public void MemberJoin() {
+			sc.nextLine();
+			String memberId = getStrInput("ID : ");
+			String memberPw = getStrInput("PassWord : ");
+			String memberPw2 = getStrInput("Passwor Confirm");
+			String name = getStrInput("이름 : ");
+			String mobile = getStrInput("휴대폰 : ");
+			
+			if(idCheck(memberId)) {
+				System.out.println("중복된 ID입니다.");
+			}else if(memberPw.equals(memberPw2)){
+			members.add(new Member(memberId, memberPw, name, mobile));
+			System.out.println(memberId + "님 가입을 축하합니다.");
+				}else {
+			System.out.println("비밀번호 확인해주세요");
+			
+		}
+	}
+			
+		public boolean idCheck(String memberId) {
+			boolean check = true;
+			Member member = FindById(memberId);
+			if(member == null)
+				check = false;
+			return check;		
+		}
+		
+		public boolean Login() {
+			sc.nextLine();
+		String memberId = getStrInput("ID : ");
+		String memberPw = getStrInput("비밀번호 : ");
+				
+		Member member = FindById(memberId);
+        if(member == null){
+            System.out.println("등록되지 않은 ID입니다.");
+            return false;
+        }else if(memberId.equals("Administrator")){ 
+        	if(memberPw.equals("password03")) {
+        		System.out.println("관리자님이 로그인하였습니다.");
+        		return true;
+        	}else{
+        		System.out.println("비밀번호가 틀렸습니다.");
+        		return false;
+        	}
+        	
+        }else if(member.getMemberPw().equals(memberPw)) {
+            System.out.println("[" + member.getMemberId() + "]님께서 로그인 하셨습니다.");
+            return true;
+        }else {
+            System.out.println("비밀번호가 틀렸습니다.");
+            return false;
+        }
+    }
+		
+		public Member FindById(String memberId) {
+			for(Member member : members) {
+				if(member.getMemberId().equals(memberId)) {
+					return member;
+				}
+			}
+			return null;
+		}
+		
+		public String getStrInput(String msg) {
+			System.out.println(msg);
+			return sc.nextLine();
+		}
+		
+}
+

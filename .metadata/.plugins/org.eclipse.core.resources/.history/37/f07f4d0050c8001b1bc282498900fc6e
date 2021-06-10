@@ -1,0 +1,138 @@
+package com.work.model;
+
+public class Play {
+	
+	private String playCode;
+	
+	private String playName;
+	
+	private String playDate;
+	
+	private String playTime;
+	
+	private String femaleActor;
+	
+	private String maleActor;
+
+	/**
+	 * @param playCode
+	 * @param playName
+	 * @param playDate
+	 * @param playTime
+	 * @param femaleActor
+	 * @param maleActor
+	 */
+	public Play(String playCode, String playName, String playDate, String playTime, String femaleActor,
+			String maleActor) {
+		this.playCode = playCode;
+		this.playName = playName;
+		this.playDate = playDate;
+		this.playTime = playTime;
+		this.femaleActor = femaleActor;
+		this.maleActor = maleActor;
+	}
+
+	/**
+	 * @return the playCode
+	 */
+	public String getPlayCode() {
+		return playCode;
+	}
+
+	/**
+	 * @param playCode the playCode to set
+	 */
+	public void setPlayCode(String playCode) {
+		this.playCode = playCode;
+	}
+
+	/**
+	 * @return the playName
+	 */
+	public String getPlayName() {
+		return playName;
+	}
+
+	/**
+	 * @param playName the playName to set
+	 */
+	public void setPlayName(String playName) {
+		this.playName = playName;
+	}
+
+	/**
+	 * @return the playDate
+	 */
+	public String getPlayDate() {
+		return playDate;
+	}
+
+	/**
+	 * @param playDate the playDate to set
+	 */
+	public void setPlayDate(String playDate) {
+		this.playDate = playDate;
+	}
+
+	/**
+	 * @return the playTime
+	 */
+	public String getPlayTime() {
+		return playTime;
+	}
+
+	/**
+	 * @param playTime the playTime to set
+	 */
+	public void setPlayTime(String playTime) {
+		this.playTime = playTime;
+	}
+
+	/**
+	 * @return the femaleActor
+	 */
+	public String getFemaleActor() {
+		return femaleActor;
+	}
+
+	/**
+	 * @param femaleActor the femaleActor to set
+	 */
+	public void setFemaleActor(String femaleActor) {
+		this.femaleActor = femaleActor;
+	}
+
+	/**
+	 * @return the maleActor
+	 */
+	public String getMaleActor() {
+		return maleActor;
+	}
+
+	/**
+	 * @param maleActor the maleActor to set
+	 */
+	public void setMaleActor(String maleActor) {
+		this.maleActor = maleActor;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append(playCode);
+		builder.append(", ");
+		builder.append(playName);
+		builder.append(", ");
+		builder.append(playDate);
+		builder.append(", ");
+		builder.append(playTime);
+		builder.append(", ");
+		builder.append(femaleActor);
+		builder.append(", ");
+		builder.append(maleActor);
+		return builder.toString();
+	}
+	
+	
+
+}

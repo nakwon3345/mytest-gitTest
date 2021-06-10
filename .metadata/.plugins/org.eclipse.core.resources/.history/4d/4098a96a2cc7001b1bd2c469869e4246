@@ -1,0 +1,14 @@
+package com.work.service;
+
+import java.util.ArrayList;
+
+import com.work.model.InfoData;
+
+public class PlayService extends MemberService{
+	
+	private ArrayList play = new ArrayList();
+	
+	public void getPlay1() {
+		System.out.println("공연 코드 : play_001");
+	}
+}

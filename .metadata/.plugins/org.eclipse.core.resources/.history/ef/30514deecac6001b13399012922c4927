@@ -1,0 +1,112 @@
+package com.work.model;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+import com.work.model.Member;
+public class DDD {
+	
+	 Scanner sc = new Scanner(System.in);
+	    List<Member> members = new ArrayList<>();
+	    
+	    public DDD() {
+	        members.add(new Member("Superman", "1234", "New York"));
+	        members.add(new Member("Batman", "1234", "Boston"));
+	        members.add(new Member("Pororo", "1234", "Seoul"));
+	    }
+	 
+	    public vomemberId run() {
+	        
+	        int key = 0;
+	        while ((key = menu()) != 0) {
+	            switch (key) {
+	                case 1:
+	                    Login();
+	                    break;
+	                case 2:
+	                    MemberJoin();
+	                    break;
+	                case 3:
+	                    SelectMember();
+	            }
+	        }
+	    }
+	 
+	    private vomemberId SelectMember() {
+	        Iterator<Member> ite = members.iterator();
+	        
+	        while(ite.hasNext()) {
+	            System.out.println(ite.next() + " ");
+	        }
+	        
+	    }
+	 
+	    private vomemberId MemberJoin() {
+	        sc.nextLine();
+	        String memberId = getStrInput("               memberId : ");
+	        String memberPw = getStrInput("         PassWord : ");
+	        String memberPw2 = getStrInput("Password Confirm : ");
+	        String name = getStrInput("           Name : ");
+	        
+	        if(memberIdCheck(memberId)) {
+	            System.out.println("중복된 memberId입니다.");
+	        }else if(memberPw.equals(memberPw2)) {
+	            members.add(new Member(memberId, memberPw, name));
+	            System.out.println(memberId + "님 가입을 축하드립니다.");
+	        }else {
+	            System.out.println("비밀번호를 확인해주세요.");
+	        }
+	        
+	    }
+	 
+	    private boolean memberIdCheck(String memberId) {
+	        boolean check = true;
+	        Member member = FindBymemberId(memberId);
+	        if(member == null)
+	            check = false;
+	        return check;
+	    }
+	 
+	    private vomemberId Login() {
+	        sc.nextLine();
+	        String memberId = getStrInput("      memberId : ");
+	        String memberPw = getStrInput("PassWord : ");
+	        
+	        Member member = FindBymemberId(memberId);
+	        if(member == null){
+	            System.out.println("등록되지 않은 memberId입니다.");
+	        }else if(member.getmemberPw().equals(memberPw)) {
+	            System.out.println("[" + member.getmemberId() + "]님께서 로그인 하셨습니다.");
+	        }else {
+	            System.out.println("비밀번호가 틀렸습니다.");
+	        }
+	    }
+	 
+	    private Member FindBymemberId(String memberId) {
+	        for(Member Member : members) {
+	            if(Member.getmemberId().equals(memberId)) {
+	                return Member;
+	            }
+	        }
+	        return null;
+	    }
+	 
+	    private String getStrInput(String msg) {
+	        System.out.println(msg);
+	        return sc.nextLine();        
+	    }
+	 
+	    private int menu() {
+	        System.out.println("Welcome YouTube");
+	        return getNumInput("[1]로그인 [2]회원가입 [3]전체 회원 보기 [0]종료");
+	    }
+	 
+	    private int getNumInput(String msg) {
+	        System.out.println(msg);
+	        return sc.nextInt();
+	    }
+	 
+	
+
+}

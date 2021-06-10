@@ -1,0 +1,11 @@
+package com.work.view;
+
+import com.work.service.MemberService;
+
+public class Test1 extends MemberService {
+	public static void main(String[] args) {
+		Test menu = new Test();
+		menu.manage();
+	}
+
+}

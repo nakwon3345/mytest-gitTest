@@ -1,0 +1,9 @@
+package com.work.exception;
+
+public class DuplicateException {
+
+	public DuplicateException(String memberId) {
+		// TODO Auto-generated constructor stub
+	}
+
+}
