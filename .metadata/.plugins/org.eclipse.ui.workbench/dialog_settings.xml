@@ -21,6 +21,8 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\pc11\Desktop\playReserve.zip"/>
+			<item value="C:\Users\pc11\Desktop\곤줄박이\playReserve.zip"/>
 			<item value="C:\Users\pc11\Desktop\원자바프로젝트_최낙원.zip"/>
 		</list>
 	</section>
